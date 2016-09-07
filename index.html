@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Add Google Maps -->
+  <script src="http://maps.googleapis.com/maps/api/js"></script>  
+    <style type="text/css">
+      .social-group{
+            margin-top: 40px;
+      }
+      .bg-white{
+        color:#FFFFFF !important;
+      }
+      .home{
+            padding: 150px 0px 0px 0px;
+            color: #FFFFFF;
+      }
+      .bgvideo{
+            z-index: -1;
+      }
+      .home-data{
+            color:white;
+      }
+      .navbar {
+            margin-bottom: 0;
+            background-color: #2d2d30;
+            border: 0;
+            font-size: 11px !important;
+            letter-spacing: 4px;
+            opacity:0.9;
+        }
+
+    /* Add a gray color to all navbar links */
+    .navbar li a, .navbar .navbar-brand { 
+            color: #d5d5d5 !important;
+        }
+
+    /* On hover, the links will turn white */
+    .navbar-nav li a:hover {
+            color: #fff !important;
+        }
+
+    /* The active link */
+    .navbar-nav li.active a {
+            color: #fff !important;
+            background-color:#29292c !important;
+        }
+
+    /* Remove border color from the collapsible button */
+    .navbar-default .navbar-toggle {
+            border-color: transparent;
+        }
+
+    /*BlackSlash Font*/
+    @font-face {
+            font-family: 'backslash';
+            font-style:  normal;
+            font-weight: 400;
+            src: url(https://drive.google.com/open?id=0B9-5UTsO_VTFTHBoOHRyTUFQN1E) format('ttf');
+        }
+
+    .logo{
+          font-family: backslash;
+          font-weight: bold;
+    }   
+    .wellStyle{
+              margin-top: 58px !important;
+    }
+    .paddStyle{
+      padding: 38px 0px 0px 0px;
+    }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+<!-- Navigation Bar Begins -->
+    <div>
+      <nav class="navbar navbar-default navbar-invert navbar-fixed-top" data-spy="affix">
+        <div class="container-fluid">
+          <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#portfolioNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+              </button>
+              <a class="navbar-brand logo" href="#home">H.S.S</a>
+
+          </div>
+          <div class="collapse navbar-collapse" id="portfolioNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#aboutus">CONTACT</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+              </ul>
+          </div>
+        </div>
+    </nav>
+  </div>
+<!-- Navigation Bar Ends -->
+
+  <div id="home">
+    <div autoplay loop muted align="center" class="embed-responsive embed-responsive-16by9 ">
+        <video autoplay loop class="embed-responsive-item bgvideo">
+            <source src="./public/video/MP4/vg.mp4" type="video/mp4">
+        </video>
+        <div class="home">
+          <div class="container-fluid">
+            <div class="row bg-white">
+              <br>
+              <div class="col-md-6 social-group">
+                <div class="row">
+                  <div class="col-md-2">
+                    <a class="bg-white" href="#">
+                      <span class="fa-stack fa-2x" >
+                        <i class="fa fa-circle-thin fa-stack-2x" ></i>
+                        <i class="fa fa-twitter fa-stack-1x"></i>
+                    </span>
+                  </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-2">
+                    <a class="bg-white"  href="https://www.facebook.com/Kalsi.JaspreetSingh">
+                      <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                        <i class="fa fa-facebook fa-stack-1x"></i>
+                    </span>
+                    </a>
+                  
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-2">
+                    <a class="bg-white" href="https://in.linkedin.com/in/jskalsi">
+                      <span class="fa-stack fa-2x">
+                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                        <i class="fa fa fa-linkedin fa-stack-1x"></i>
+                    </span>
+                    </a>                  
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="home-data text-center">
+                <div class="container-fluid">
+                    <h2>Typography</h2>
+                    <p>Use the blockquote element to present content from another source:</p>
+                    <blockquote>
+                      <i class="fa fa-quote-left fa-1x fa-pull-left fa-border"></i>
+                      <p>Most good programmers do programming not because they expect  to get paid or get adulation by the public, but because it is fun to program.</p>
+                      <footer>by Linus Torvalds</footer>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+<!-- Portfolio -->
+  <div id="portfolio" class="paddStyle">
+    <div class="container-fluid">
+      <h1 class="text-center">PORTFOLIO</h1><br><br><br>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="well">
+              <img src="http://ameg-development.com/Content/images/comingsoon.gif" class="img-responsive">
+            </div>
+            <div class="well">
+              <img src="http://ameg-development.com/Content/images/comingsoon.gif" class="img-responsive">
+            </div>
+            <div class="well">
+              <img src="http://ameg-development.com/Content/images/comingsoon.gif" class="img-responsive">
+            </div>            
+          </div>
+          <div class="col-md-4">
+            <div class="well">
+              <img src="http://ameg-development.com/Content/images/comingsoon.gif" class="img-responsive">
+            </div>
+            <div class="well">
+              <img src="http://ameg-development.com/Content/images/comingsoon.gif" class="img-responsive">
+            </div>
+            <div class="well">
+              <img src="http://ameg-development.com/Content/images/comingsoon.gif" class="img-responsive">
+            </div>            
+          </div>  
+          <div class="col-md-4">
+            <div class="well">
+              <img src="http://ameg-development.com/Content/images/comingsoon.gif" class="img-responsive">
+            </div>
+            <div class="well">
+              <img src="http://ameg-development.com/Content/images/comingsoon.gif" class="img-responsive">
+            </div>
+            <div class="well">
+              <img src="http://ameg-development.com/Content/images/comingsoon.gif" class="img-responsive">
+            </div>            
+          </div>                    
+        </div>                
+      </div>
+    </div>
+  </div>
+
+<!-- About us -->
+  <div id="aboutus" class="paddStyle">
+    <div class="container-fluid">
+      <div class="container">
+        <h1 class="text-center">CONTACT</h1>
+        <div class="row">
+        <div class="col-md-5">
+          <div class="well wellStyle">
+            <div id="googleMap" style="height:400px;width:100%;"></div>
+          </div>
+        </div>
+        <div class="col-md-7 wellStyle">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input class="form-control" type="text" name="name" placeholder="Name" required>
+              </div>
+              <div class="col-md-6 form-group">
+                <input class="form-control" type="email" name="name" placeholder="Email" required>
+              </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5" required ></textarea><br>
+                <div class="row">
+                  <div class="col-sm-12 form-group">
+                    <button class="btn btn-default pull-right" type="submit">Send</button>
+                </div>
+              </div> 
+        </div>  
+        </div>
+      </div>
+    </div>
+  </div>    
+  
+
+<!-- Fotter -->
+<div id="footer">
+  <footer class="text-center">
+    <a class="up-arrow" href="#home" data-toggle="tooltip" title="TO TOP">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a><br><br>
+      <p>Theme Made By <a href="https://in.linkedin.com/in/jskalsi" data-toggle="tooltip" title="">Harminder Singh Saggu</a></p> 
+  </footer>
+</div>
+
+<script>
+  var myCenter = new google.maps.LatLng(28.6391,77.0868);
+  function initialize() {
+              var mapProp = {
+                      center:myCenter,
+                      zoom:14,
+                      scrollwheel:false,
+                      draggable:false,
+                      mapTypeId:google.maps.MapTypeId.ROADMAP
+                         };
+  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  var marker = new google.maps.Marker({position:myCenter,});
+  marker.setMap(map);
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
+
+  // Smooth Scrolling
+
+  $(document).ready(function(){
+    // Add smooth scrolling to all links in navbar + footer link
+    $(".navbar a, footer a[href='#home']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+      } // End if 
+    }); 
+  })
+</script>
+
+</body>
+</html>
